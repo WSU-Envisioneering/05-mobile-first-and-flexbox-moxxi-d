@@ -68,3 +68,76 @@ main{
     background-color: rgba(165, 116, 42, 0.404);
     border-radius: 4rem;
 }
+
+
+@media all and (min-width: 900px){
+    header{
+        text-align: center;
+    }
+
+    img{
+        max-width: 90%;
+    }
+
+    img:hover{
+        filter: brightness(1.5);
+    }
+
+    header:hover{
+        padding: 3rem;
+        background: #7753ED;
+        background: radial-gradient(circle, rgba(119, 83, 237, 1) 5%, rgba(209, 59, 59, 1) 33%, rgba(234, 127, 27, 1) 66%, rgba(255, 145, 0, 1) 100%);
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul{
+        justify-content: center;
+    }
+
+    li:hover{
+        background-color: bisque;
+        color: chocolate;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas: 
+        "img1 img2 arcl"
+        "sec1 img3 img4"
+        "sec2 sec2 sec2";
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .ghost-image{
+        grid-area: img1;
+    }
+
+    .pumpkin-image{
+        grid-area: img2;
+    }
+
+    .arcl{
+        grid-area: arcl;
+    }
+
+    .sec1{
+        grid-area: sec1;
+    }
+
+    .great-pumpkin{
+        grid-area: img3;
+    }
+
+    .casper-ghost{
+        grid-area: img4;
+    }
+
+    .sec2{
+        grid-area: sec2;
+    }
+}
